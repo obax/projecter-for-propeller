@@ -1,0 +1,14 @@
+body{
+  background-color: #DDD;
+}
+.strikethrough{
+  color: #333;
+  text-decoration: line-through;  
+}
+#completed .editcell{
+    display: none;
+}
+
+#completed .deletecell{
+    text-decoration: none;
+}
