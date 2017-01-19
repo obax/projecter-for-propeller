@@ -1,7 +1,12 @@
 # projecter-for-propeller
-My submission for my technical interview at Propeller Communications
+![logo](https://todo-obax.c9users.io/projecter.png)
+
+
+Projecter is a very simple todo app created for by Olivier Bacs for Propeller Communications.
+
 
 The live version is available at http://todo-obax.c9users.io/propeller/public/tasks.
 
-The solution is based on Laravel, with jQuery and Semantic UI on the front end.
-Apologies for the absence of a working modal attached to the Edit button.
+The solution is based on Laravel on the back end, with jQuery and Semantic UI on the front end.
+
+Any question? Email me at olivier.bacs@outlook.com.
