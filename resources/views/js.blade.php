@@ -30,6 +30,12 @@
             parent_div.slideUp();
             parent_div.appendTo("#completed");
             parent_div.slideDown();
+            $('#count-done').text(function(index,string){
+              return parseInt(string) + 1;
+            });
+            $('#count-todo').text(function(index,string){
+              return parseInt(string) - 1;
+            });
             jQuery.ajax({
                 url: "/propeller/public/tasks/" + $(this).attr('taskid') + "/edit?is_completed=1"
             }).done(
@@ -42,6 +48,12 @@
             parent_div.slideUp();
             parent_div.appendTo("#uncompleted");
             parent_div.slideDown();
+            $('#count-done').text(function(index,string){
+              return parseInt(string) - 1;
+            });
+            $('#count-todo').text(function(index,string){
+              return parseInt(string) + 1;
+            });
             jQuery.ajax({
                 url: "/propeller/public/tasks/" + $(this).attr('taskid') + "/edit?is_completed=0"
             });

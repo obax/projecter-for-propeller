@@ -8,7 +8,7 @@ Projecter
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.js"></script>
 @if(count($tasks))
 <div class="ui stacked segment" >
-    <span title="Refresh the page for the correct count" class="ui circular label">{{count($tasks_todo)}}</span><span class="ui header">To do</span>
+    <span title="Refresh the page for the correct count" id="count-todo" class="ui circular label">{{count($tasks_todo)}}</span><span class="ui header">To do</span>
 <table class="ui orange celled table" id="uncompleted">
     @if(count($tasks_todo))
     @foreach($tasks_todo as $todo)
@@ -60,7 +60,7 @@ Projecter
 </div>
 
 <div class="ui stacked segment" >
-    <span title="Refresh the page for the correct count" class="ui circular label">{{count($tasks_done)}}</span><span class="ui header">Completed tasks</span>
+    <span title="Refresh the page for the correct count" id="count-done" class="ui circular label">{{count($tasks_done)}}</span><span class="ui header">Completed tasks</span>
     <table class="ui teal celled table strikethrough" id="completed">
     @if(count($tasks_done))
     @foreach($tasks_done as $done)
