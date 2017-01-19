@@ -6,6 +6,6 @@ Projecter is a very simple todo app created for by Olivier Bacs for [Propeller](
 
 The live version is available at http://todo-obax.c9users.io/propeller/public/tasks.
 
-The solution is based on Laravel on the back end, with jQuery and Semantic UI on the front end.
+The application uses Laravel to interact with a database and the view via Ajax calls, using jQuery and Semantic UI on the front end.
 
 Any question? Email me at olivier.bacs@outlook.com.
