@@ -16,7 +16,7 @@ Projecter
         <td>
             </div class="row">
                  <!--<div class="ui slider checkbox">-->
-                     <input autocomplete="off" taskid="{{$todo->id}}" name="{{$todo->id}}" type="checkbox" class="task">
+                     <input autocomplete="off" taskid="{{$todo->id}}" name="{{$todo->id}}" type="checkbox" class="ui checkbox task">
                 <!--</div>-->
             </div>
         </td>
@@ -48,10 +48,10 @@ Projecter
             </div>
         </td>
         <td class="editcell">
-            <i class="icon blue edit"></i>Edit
+            <a href="#" class="ui button fluid blue change" taskid="{{$todo->id}}"><i class="icon edit"></i>Edit</a>
         </td>
         <td class="deletecell">
-            <i class="icon red remove circle"></i><a href="#" class="delete" taskid="{{$todo->id}}">Delete</a>
+            <a href="#" class="delete orange fluid ui button" taskid="{{$todo->id}}"><i class="icon  remove circle"></i>Delete</a>
         </td>
     </tr>
     @endforeach
@@ -68,7 +68,7 @@ Projecter
         <td>
             </div class="row">
                  <!--<div class="ui slider checkbox">-->
-                     <input checked autocomplete="off" id="{{$done->id}}" name="{{$done->id}}" type="checkbox" class="task">
+                     <input checked autocomplete="off" id="{{$done->id}}" name="{{$done->id}}" type="checkbox" class="ui checkbox task">
                 <!--</div>-->
             </div>
         </td>
@@ -98,10 +98,11 @@ Projecter
             </div>
         </td>
         <td class="editcell">
-            <i class="icon blue edit"></i>Edit
+            <!--New modal for editing-->
+            <a href="#" class="ui button fluid blue change" taskid="{{$done->id}}"><i class="icon edit"></i>Edit</a>
         </td>
         <td class="deletecell">
-            <i class="icon red remove circle"></i><a href="#" class="delete" taskid="{{$done->id}}">Delete</span>
+            <a href="#" class="ui button fluid orange delete" taskid="{{$done->id}}"><i class="icon remove circle"></i>Delete</span>
         </td>
     </tr>
     @endforeach

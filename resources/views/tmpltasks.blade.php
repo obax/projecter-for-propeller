@@ -20,7 +20,7 @@
   <a href="/propeller/public/tasks"><img src="https://todo-obax.c9users.io/projecter.png" alt="projecter" style="width: 30vw; max-width : 150px;" />
   </a>
 <div class="row">
-    <div><a id="createtask" class="ui label teal"><i class="icon add circle"></i>Create a task</a></div>
+    <div><a id="createtask" class="ui button tiny fluid teal"><i class="icon add circle"></i>Create a task</a></div>
 </div>
 <!--end title segment-->
 </div>
